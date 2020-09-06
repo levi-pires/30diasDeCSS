@@ -1,0 +1,28 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div {
+  width: 250px;
+  height: 250px;
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: rgb(14, 22, 97);
+  border-right-color: rgb(14, 78, 97);
+  border-radius: 100%;
+  animation: spin 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+}

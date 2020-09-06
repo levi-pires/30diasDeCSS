@@ -1,0 +1,47 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 20rem;
+  height: 5rem;
+  background: rgb(0, 3, 19);
+  border: 4px rgb(18, 31, 97) solid;
+  color: rgb(77, 65, 236);
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: relative;
+  cursor: pointer;
+}
+
+button::before,
+button::after {
+  content: "";
+  position: absolute;
+  width: 2.5rem;
+  height: 4px;
+  background: #000;
+  transform: skewX(50deg);
+  transition: 0.4s linear;
+}
+
+button::before {
+  top: -4px;
+  left: 10%;
+}
+
+button::after {
+  bottom: -4px;
+  right: 10%;
+}
+
+button:hover::before {
+  left: 75%;
+}
+
+button:hover::after {
+  right: 75%;
+}
