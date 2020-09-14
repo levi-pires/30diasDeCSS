@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+div {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background: rgb(15, 163, 163);
+  animation: pulsar 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+
+@keyframes pulsar {
+  25% {
+    box-shadow: 0 0 0 75px rgba(15, 163, 163, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 37px rgba(15, 163, 163, 0.25);
+    background: rgb(12, 117, 117);
+  }
+  75% {
+    box-shadow: 0 0 0 0 rgba(15, 163, 163, 0.125),
+      0 0 0 37px rgba(15, 163, 163, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 0 #000, 0 0 0 0 rgba(15, 163, 163, 0.125);
+  }
+}
