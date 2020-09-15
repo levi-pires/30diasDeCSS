@@ -1,0 +1,58 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pendulo {
+  display: flex;
+  border-top: 10px solid gray;
+}
+
+span {
+  width: 3px;
+  height: 300px;
+  position: relative;
+  background-color: silver;
+  margin: 0 29px;
+  transform-origin: top;
+}
+
+span::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  border-radius: 50%;
+  background-color: silver;
+  transform: translateX(-30px);
+}
+
+span:first-child {
+  animation: _left 2s ease-in-out infinite;
+}
+
+span:last-child {
+  animation: _right 2s 1s ease-in-out infinite;
+}
+
+@keyframes _left {
+  25% {
+    transform: rotate(25deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes _right {
+  25% {
+    transform: rotate(-25deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}

@@ -1,0 +1,25 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(106, 212, 177, 0.5);
+}
+
+span {
+  font: 500 5rem "Fira Code";
+}
+
+span::after {
+  content: "";
+  animation: switch 3s linear infinite;
+}
+
+@keyframes switch {
+  from {
+    content: ">= 30 DIAS <=";
+  }
+  to {
+    content: ">= DE CSS <=";
+  }
+}

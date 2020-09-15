@@ -1,0 +1,93 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(22, 163, 121, 0.12);
+}
+
+.back-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-item div {
+  position: absolute;
+  width: 200px;
+  height: 7px;
+  border-radius: 0.8rem;
+  background-color: rgba(0, 0, 0, 0.24);
+  animation: blu 10s linear infinite;
+}
+
+.back-item div:nth-child(1) {
+  transform: translateY(100px);
+}
+
+.back-item div:nth-child(2) {
+  width: 150px;
+  transform: rotate(45deg) translateX(70px);
+}
+
+.back-item div:nth-child(3) {
+  width: 150px;
+  transform: rotate(-45deg) translateX(-70px);
+}
+
+.back-item span {
+  transform: translateY(60px);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.24);
+  animation: blu-txt 2.5s linear infinite;
+}
+
+.loader-component {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(15, 143, 160);
+  border-radius: 50%;
+  animation: load 5s backwards infinite;
+}
+
+.loader-component:nth-child(2) {
+  background-color: rgb(15, 95, 160);
+  animation-delay: 1.25s;
+}
+
+.loader-component:nth-child(3) {
+  background-color: rgb(15, 49, 160);
+  animation-delay: 2.5s;
+}
+
+@keyframes load {
+  0% {
+    transform: translate(100px, 100px);
+  }
+  25% {
+    transform: translate(100px, 100px);
+  }
+  50% {
+    transform: translate(-100px, 100px);
+  }
+  75% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100px, 100px);
+  }
+}
+
+@keyframes blu {
+  50% {
+    background-color: aqua;
+  }
+}
+
+@keyframes blu-txt {
+  50% {
+    color: aqua;
+  }
+}
