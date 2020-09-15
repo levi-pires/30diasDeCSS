@@ -1,0 +1,20 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  color: transparent;
+  font: 700 4.25rem "Fira Code";
+  background: url(back.jpg);
+  -webkit-background-clip: text;
+  animation: txt 10s ease-in-out infinite;
+}
+
+@keyframes txt {
+  50% {
+    background-position: 100% 75%;
+  }
+}
