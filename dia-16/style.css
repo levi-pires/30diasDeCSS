@@ -1,0 +1,59 @@
+*,
+*::before {
+  transition: all 0.7s;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 2.5rem;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  background: rgba(156, 210, 224, 0.2);
+}
+
+div::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  bottom: 40%;
+  left: 10%;
+  background-image: url(back.jpeg);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+div:hover::before {
+  bottom: 0;
+  left: -5%;
+  border-radius: 0;
+}
+
+div:hover img {
+  transform: translateY(30px) rotateZ(2deg);
+}
+
+div:hover strong {
+  transform: translateY(200%);
+}
+
+img {
+  height: 13rem;
+  width: 13rem;
+}
+
+strong {
+  font-family: Righteous, cursive;
+  font-size: 5rem;
+}

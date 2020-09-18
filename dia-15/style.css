@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+span {
+  font-size: 3rem;
+  font-weight: 500;
+  text-shadow: 3px 5px 1px gray;
+  animation: float 10s linear infinite;
+}
+
+@keyframes float {
+  25% {
+    transform: translate(125%, 250%);
+  }
+  50% {
+    transform: translate(-125%, -250%);
+  }
+  75% {
+    transform: translate(0, 450%);
+  }
+}
