@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
 * {
-  transition: 1s;
+  transition: 1.7s;
 }
 
 body {
@@ -16,24 +18,28 @@ div {
   flex-direction: column;
   padding: 1rem 3rem;
   border-radius: 0.8rem;
-  background: rgba(142, 232, 255, 0.2) url(back.jpg);
+  background: rgba(142, 232, 255, 0.2)
+    url(https://raw.githubusercontent.com/levi-pires/30diasDeCSS/master/dia-16/back.jpg);
   background-size: cover;
   background-blend-mode: overlay;
+  box-shadow: 1.5rem 2rem 2rem black;
 }
 
 div:hover {
-  background: rgba(255, 255, 255, 0.15) url(back.jpg);
+  background: rgba(255, 255, 255, 0.15)
+    url(https://raw.githubusercontent.com/levi-pires/30diasDeCSS/master/dia-16/back.jpg);
   background-size: cover;
+  box-shadow: .75rem 1rem 1rem black;
 }
 
 img {
-  transform: translateX(-5em) rotateZ(-5deg);
+  transform: translateX(-5em) rotateZ(-10deg);
   height: 9rem;
   width: 9rem;
 }
 
 div:hover img {
-  transform: translate(0, 10%) rotateZ(0);
+  transform: translate(0, 25%) rotate(0);
 }
 
 strong {
@@ -46,3 +52,4 @@ div:hover strong {
   filter: blur(5px);
   opacity: 0;
 }
+
