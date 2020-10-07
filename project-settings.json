@@ -1,6 +1,6 @@
 {
-  "type": "list" /* "list" | "none" */,
-  "listIdentifier": "dia-{i}" /* must contain `{i}` if "type": "list" */,
+  "type": "list",
+  "listIdentifier": "dia-{i}",
   "identifier": "dia",
-  "title": "Day {i}" /* must contain `{i}` if "type": "list"  */
+  "title": "Day {i}"
 }
