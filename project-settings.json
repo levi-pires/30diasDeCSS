@@ -1,0 +1,6 @@
+{
+  "type": "list" /* "list" | "none" */,
+  "listIdentifier": "dia-{i}" /* must contain `{i}` if "type": "list" */,
+  "identifier": "dia",
+  "title": "Day {i}" /* must contain `{i}` if "type": "list"  */
+}
