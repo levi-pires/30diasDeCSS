@@ -2,5 +2,23 @@
   "type": "list",
   "listIdentifier": "dia-{i}",
   "identifier": "dia",
-  "title": "Day {i}"
+  "title": "Day {i}",
+  "codePenUrls": [
+    "https://codepen.io/levi-pires/pen/gOMprvM",
+    "https://codepen.io/levi-pires/pen/abZONQr",
+    "https://codepen.io/levi-pires/pen/MWewyZq",
+    "https://codepen.io/levi-pires/pen/ZEOGWwm",
+    "https://codepen.io/levi-pires/pen/jOrPqRx",
+    "https://codepen.io/levi-pires/pen/QWEbNRm",
+    "https://codepen.io/levi-pires/pen/BazNKgw",
+    "https://codepen.io/levi-pires/pen/vYKOKEy",
+    "https://codepen.io/levi-pires/pen/yLJNJyQ",
+    "https://codepen.io/levi-pires/pen/qBNdNdd",
+    "https://codepen.io/levi-pires/pen/zYBGBGg",
+    "https://codepen.io/levi-pires/pen/rNLVLOg",
+    "https://codepen.io/levi-pires/pen/eYzNzJo",
+    "https://codepen.io/levi-pires/pen/OJXVXNO",
+    "https://codepen.io/levi-pires/pen/dyXoXXp",
+    "https://codepen.io/levi-pires/pen/zYqMJwR"
+  ]
 }

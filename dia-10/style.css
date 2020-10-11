@@ -7,7 +7,7 @@ body {
 }
 
 span {
-  font: 500 5rem "Fira Code";
+  font: 500 4rem "Fira Code";
 }
 
 span::after {

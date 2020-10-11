@@ -7,10 +7,10 @@ body {
 
 span {
   color: transparent;
-  font: 700 4.25rem "Fira Code";
+  font: 700 3rem "Fira Code";
   background: url(back.jpg);
   -webkit-background-clip: text;
-  animation: txt 10s ease-in-out infinite;
+  animation: txt 5s ease-in-out infinite;
 }
 
 @keyframes txt {
