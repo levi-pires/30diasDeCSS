@@ -1,9 +1,9 @@
 {
   "type": "list",
   "listIdentifier": "dia-{i}",
-  "identifier": "dia",
+  "listPatternIdentifier": "dia",
   "title": "Day {i}",
-  "codePenUrls": [
+  "externalUrls": [
     "https://codepen.io/levi-pires/pen/gOMprvM",
     "https://codepen.io/levi-pires/pen/abZONQr",
     "https://codepen.io/levi-pires/pen/MWewyZq",
